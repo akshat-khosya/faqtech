@@ -65,8 +65,93 @@
         </div>
 
     </section>
-    <section class="contact">
-        <h1>Contact Us</h1>
+    <section class="contactus">
+        <h1 class="contactus__primary connect__primary">Have any doubt just a message away</h1>
+        <div class="contactus__row">
+
+            <div class="contactus__item">
+                <hr>
+                <h1 class="contactus__primary">
+                    Get in <span class="contactuss__primary-main">Touch</span> with Us!
+                </h1>
+                <div class="contactus__con-form">
+                    <form class="form">
+
+                        <div class="form__group">
+                            <input id="name" type="text" class="form__input" placeholder="Enter Your Name" required
+                                oninvalid="this.setCustomValidity('Please Enter Your Name')"
+                                oninput="setCustomValidity('')">
+                            <label class="form__label" for="name">Enter Your Name</label>
+                        </div>
+                        <div class="form__group">
+                            <input id="email" type="email" class="form__input" placeholder="Enter Email" required
+                                oninvalid="this.setCustomValidity('Please Enter valid email')"
+                                oninput="setCustomValidity('')">
+                            <label class="form__label" for="email">Enter Email</label>
+                        </div>
+                        <div class="form__group">
+                            <textarea class="form__input" type="text" id="msg" name="msg" placeholder="Message"
+                                required="" rows="3" spellcheck="false"></textarea>
+                            <label class="form__label" for="msg">Message</label>
+                        </div>
+                        <div class="form__group">
+                            <div class="g-recaptcha brochure__form__captcha"
+                                data-sitekey="6LezbsYbAAAAAK2sXn2TqrPuNzDxl0CdPjXTfw16"></div>
+                        </div>
+                        <div class="form__button">
+
+                            <button class="form__button-btn">Send Message</button>
+                        </div>
+                </div>
+                </form>
+            </div>
+
+            <div class="contactus__item item2">
+                <hr>
+                <h1 class="contactus__primary">
+                    More ways to <span class="contactuss__primary-main">contact us</span>
+                </h1>
+                <div class="contactus__connectgroup">
+                    <h3 class="contactus__tertiary">
+                        Subscribe to our newsletter
+                    </h3>
+                    <p class="contactus__connectgroup-text contactus__newsletter">
+                        Our <a class="contactus__links" href="#">Editor's picks newsletter</a> will keep you informed
+                        about the latest trends.
+                    </p>
+                </div>
+                <div class="contactus__connectgroup">
+                    <h3 class="contactus__tertiary">
+                        Follow us on social media
+                    </h3>
+                    <p class="contactus__connectgroup-text contactus__socialmedia">
+                        Join the conversation on <a class="contactus__links" href="#">Facebook, </a><a
+                            class="contactus__links" href="#">LinkedIn </a>or <a class="contactus__links"
+                            href="#">Twitter,</a> or visit us on <a class="contactus__links" href="#">YouTube</a>.
+                    </p>
+                </div>
+                <div class="contactus__connectgroup">
+                    <h3 class="contactus__tertiary">
+                        Find an office
+                    </h3>
+                    <p class="contactus__connectgroup-text contactus__office">
+                        With <a class="contactus__links" href="#">700 office location</a> in over 150 countries, we
+                        provide local knowledge with global experience.
+                    </p>
+                </div>
+                <div class="contactus__connectgroup">
+                    <h3 class="contactus__tertiary">
+                        Explore the latest news
+                    </h3>
+                    <p class="contactus__connectgroup-text contactus__news">
+                        Stay up to date with the <a class="contactus__links" href="#">latest news</a> from EY — and see
+                        how we’re building a better working world.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
     </section>
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 </body>
