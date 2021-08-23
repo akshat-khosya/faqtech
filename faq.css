@@ -35,6 +35,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #000;
+    color: white;
 }
 .top{
     background-image: url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1007&q=80);
@@ -63,217 +65,75 @@
     color: white;
     /* rgba(240,238,255,0.2) !important */
 }
-.contactus{
+.con{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.image_con{
+    margin-left: 10%;
+}
+.contact__image{
+    display: block;
+    width: 90%;
     height: auto;
-    width: 100%;
-    background-color: #000;
-    color: white;
+    margin-top: 10%;
 }
-
-
-.connect__primary{
-    margin-left: 3%;
-    color: var(--middel-purple);
-    font-weight: 300;
-}
-hr{
-    border: 3px solid #FFFF00;
-    
-}
-
-.contactus__item{
-    width: 100%;
-    margin: 3% 3%;
-
-}
-.item2{
-    width: 80%;
-}
-.contactus__row{
+.con{
     display: flex;
     flex-direction: row;
     
-    
 }
-
-
-.contactus__primary{
-    font-size: 52px;
-    font-weight: 300;
-    font-family: 'Ubuntu', sans-serif;
-    cursor: default;
-    padding-top: 5%;
-    
-}
-.contactus__primary:hover .contactuss__primary-main{
-    color: var(--blue);
-    cursor: default;
-}
-.contactus__con-form{
-    
-    padding: 20px 20px 40px 20px;
-    margin-top: 0%;
-}
-.form__group{
-    margin: 2rem 0 2rem 0;
-}
-.form__input{
-    font-size: 1.6rem;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    border-bottom: 3px solid transparent;
-    width: 100%;
+label{
     display: block;
-    background-color: var(--gray-49);
-    color: var(--main-100);
-    transition: all .3s;
-    border: 2px solid var(--gray-49);
-    
+    padding: 10px 0 10px 0;
+    font-size: 22px;
 }
 textarea{
+    display: block;
     resize: vertical;
+    font-size: 22px;
+    padding: 10px 20px;
+    background-color: rgb(68, 63, 63);
+    color: white;
+    text-decoration: none;
+    outline: none;
+    border-radius: 5px;
 }
-.form__input:focus{
+textarea:focus{
     outline: none;
     
-    border: 2px solid var(--main-100);
+    border: 2px solid silver;
+    width: auto;
 }
-.form__input:focus:invalid {
-    border: 2px solid var(--red);
+textarea:focus:invalid{
+    border:2px solid #fc2a35 !important; 
 }
-.form__input::-webkit-input-placeholder{
-    color: #999;
-}
-.form__label{
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-left: 1rem;
-    margin-top: .5rem;
-    display: block;
-    transition: all .3s;
-    color: --tcolor;
-}   
-.form__input:placeholder-shown + .form__label{
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-.5rem);
-}
-.form__button{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.form__button-btn{
-    border: none;
-    margin-top: 15px;
-    padding: 20px 80px;
-    border-radius: 5px;
-    background: transparent;
-    border: 2px solid var(--main-100);
-    text-decoration: none;
-    color: var(--main-100);
-    font-size: 18px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 600;
-    transition: all .2s;
-    text-align: center;
-    width: 100%;
-    cursor:pointer;
-}
-.form__button-btn:hover{
-    background-color: var(--white);
-    color: var(--black);
-}
-
-/* connect with us */
-.contactus__connectgroup{
+.form__groups{
     margin: 5% 0 5% 0;
+
 }
-.contactus__tertiary{
-    font-size: 2.4rem;
-    font-weight: 100;
-}
-.contactus__connectgroup-text{
-    margin-top: 3%;
-    font-size: 1.6rem;
-    font-weight: 100;
-}
-.contactus__links{
+
+input{
+    font-size: 22px;
+    padding: 10px 20px;
+    background-color: rgb(68, 63, 63);
+    color: white;
     text-decoration: none;
-    color: var(--main-100);
-    font-weight: 900;
-    border-bottom: 2px solid var(--yellow);
+    outline: none;
+    border-radius: 5px;
+    width: auto;
 }
-.contactus__links:hover{
-    color: var(--yellow);
-    border-bottom: 2px solid var(--blue);
+input:focus{
+    outline: none;
+    
+    border: 2px solid silver;
+    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+input:focus:invalid {
+    border:2px solid #fc2a35 !important; 
+}
+.form_con{
+    margin-right: 10%;
+}
 /* media query */
 
-@media (max-width:1200px){
-    .contactus__row{
-        
-        flex-direction: column;
-       
-        
-    }
-    .contactus__item{
-        width: 90%;
-        margin-left: 5%;
-    }
-    
-    .connect__primary{
-        margin-left: 5%;
-    }
-    
-}
-
-
-@media (max-width:700px){
-    
-    .contactus__tertiary{
-        font-size: 1.6rem;
-    }
-    .contactus__connectgroup-text{
-        font-size: 0.8rem;
-    }
-    .contactus__primary{
-        font-size: 42px;
-    }
-    .form__input{
-        font-size: 15px;
-    }
-}
-@media (max-width:600px){
-    .contactus__primary{
-        font-size: 32px;
-    }
-}
